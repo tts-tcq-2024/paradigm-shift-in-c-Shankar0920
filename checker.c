@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <assert.h>
+
 int batteryIsOk(float temperature, float soc, float chargeRate) {
     int temperatureOutOfRange = (temperature < 0 || temperature > 45);
     int socOutOfRange = (soc < 20 || soc > 80);
