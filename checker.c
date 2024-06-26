@@ -19,3 +19,13 @@ int batteryIsOk(float temperature, float soc, float chargeRate) {
     }
     return 1;
 }
+int main() {
+    // Example test cases
+    assert(batteryIsOk(25, 70, 0.7));  // Should pass
+    assert(!batteryIsOk(50, 85, 0));   // Should fail
+    // Additional checks with print statements
+    if (!batteryIsOk(50, 85, 0)) {
+        printf("Battery parameters out of range!\n");
+    }
+    return 0;
+}
