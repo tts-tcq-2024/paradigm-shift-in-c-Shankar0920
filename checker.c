@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
+#include <stdbool.h>
+
 int isOutOfRange(float value, float lowerBound, float upperBound)
 {
   return (value < lowerBound || value > upperBound);
