@@ -1,8 +1,8 @@
 #include <assert.h>
-#include "soc_status.h"
-#include "temperature_status.h"
-#include "range_checking.h"
-#include "chargerate_status.h"
+#include "soc_level.h"
+#include "temperature_level.h"
+#include "range_status.h"
+#include "chargerate_level.h"
 
 #define WARNING_SOC_CHECK TRUE
 #define WARNING_TEMP_CHECK TRUE
